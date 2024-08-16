@@ -2,12 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <img class="skateboard" src="src/img/skateboard_grahic.avif" alt="">
+      <h1>ALLES ÜBER MICH</h1>
+      <img src="src/img/das-gesicht-des-mannes-im-flachen-stil_90220-2877.jpg" alt="">
+    </header>
+    
+
+    <form action="" id = "friendsForm">
+      <input id="name" type="text" placeholder = "Mein Vorname ist" required>
+      <input id="lastname" type="text" placeholder = "Mein Nachname ist" required>
+      <input id="birthday" type="text" placeholder = "Geboren wurde ich am" required>
+      <input id="birthplace" type="text" placeholder = "Geboren wurde ich in" required>
+      <input id="nickname" type="text" placeholder = "Mein Sptzname lautet" required>
+      <input id="located" type="text" placeholder = "Hier wohne ich" required>
+      <input id="music" type="text" placeholder = "Das höre ich am liebsten" required>
+      <input id="series" type="text" placeholder = "Die beste Serie ist" required>
+      <input id="movie" type="text" placeholder = "Der beste Film ist" required>
+      <input id="img" type="text" placeholder = "So sehe ich aus (URL zum Bild)" required>
+      <button id="submit" type="submit">Absenden</button>
+    </form>
+    
+    <section id="cardContainer"></div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
